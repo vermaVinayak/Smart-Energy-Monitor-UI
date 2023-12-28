@@ -1,0 +1,107 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Challenge</title>
+
+    <!-- Mobile responsive code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- import style.css from styles folder -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Smart Energy Monitor</h1>
+    </header>
+    <button id="connectButton">Connect to Serial Device</button>
+
+    <h2>
+        My Devices
+        <span class="add-devices">
+            <button class="heading-button">+</button>
+            <button class="heading-button">...</button>
+        </span>
+    </h2>
+    <h3>
+        Building 405 >
+    </h3>
+    <div class="devices-container">
+        <div class="device">
+            <h4>209 Load</h4>
+            STATUS: <span id="load_status">🟥</span>
+            <br>
+            <br>
+            <button id="sendButton" class="switch-button">Switch</button>
+            <hr>
+            <!-- Stats section -->
+            <div class="monitor-container">
+                <h4 class="statsHeading">Monitor</h4>
+                <p class="stats">V<sub>L(RMS)</sub>: <span id="receivedDataVoltage" class="reading">----</span> V</p>
+                <p class="stats">I<sub>L(RMS)</sub>: <span id="receivedDataCurrent" class="reading">----</span> mA</p>
+                <p class="stats">P<sub>L(RMS)</sub>: <span id="receivedDataPower" class="reading">----</span> W</p>
+            </div>
+        </div>
+        <div class="device">
+            <h4>Office Light</h4>
+            STATUS: 🟥
+            <br>
+            <br>
+            <button class="switch-button">Switch</button>
+            <hr>
+            <!-- Stats section -->
+            <div class="monitor-container">
+                <h4 class="statsHeading">Monitor</h4>
+                <p class="stats">V<sub>L(RMS)</sub>: <span class="reading">19.6</span> V</p>
+                <p class="stats">I<sub>L(RMS)</sub>: <span class="reading">1.35</span> mA</p>
+                <p class="stats">P<sub>L(RMS)</sub>: <span class="reading">120</span> W</p>
+            </div>
+        </div>
+    </div>
+    <h3>
+        Bedroom >
+    </h3>
+    <div class="devices-container">
+        <div class="device">
+            <h4>Lamp</h4>
+            STATUS: 🟩
+            <br>
+            <br>
+            <button class="switch-button">Switch</button>
+            <hr>
+            <!-- Stats section -->
+            <div class="monitor-container">
+                <h4 class="statsHeading">Monitor</h4>
+                <p class="stats">V<sub>L(RMS)</sub>: <span class="reading">19.6</span> V</p>
+                <p class="stats">I<sub>L(RMS)</sub>: <span class="reading">1.35</span> mA</p>
+                <p class="stats">P<sub>L(RMS)</sub>: <span class="reading">120</span> W</p>
+            </div>
+        </div>
+        <div class="device">
+            <h4>Bed Heater</h4>
+            STATUS: 🟩
+            <br>
+            <br>
+            <button class="switch-button">Switch</button>
+            <hr>
+            <!-- Stats section -->
+            <div class="monitor-container">
+                <h4 class="statsHeading">Monitor</h4>
+                <p class="stats">V<sub>L(RMS)</sub>: <span class="reading">666</span> V</p>
+                <p class="stats">I<sub>L(RMS)</sub>: <span class="reading">420</span> mA</p>
+                <p class="stats">P<sub>L(RMS)</sub>: <span class="reading">0.69</span> W</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>Created by 209 <a href="about.html">Team 26</a></p>
+    </footer>
+
+    <!-- Import scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
